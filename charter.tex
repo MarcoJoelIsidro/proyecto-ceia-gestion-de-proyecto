@@ -18,8 +18,8 @@
 \autor{Ing. Marco Joel Isidro}
 
 % El nombre del director y co-director, se puede usar el cualquier lugar del documento con el comando \supname y \cosupname y \pertesupname y \pertecosupname
-\director{Sin definir}
-\pertenenciaDirector{pertenencia} 
+\director{Ing. Maxim Dorogov}
+\pertenenciaDirector{FIUBA} 
 \codirector{} % para que aparezca en la portada se debe descomentar la opción codirector en los parámetros de documentclass
 \pertenenciaCoDirector{FIUBA}
 
@@ -27,9 +27,9 @@
 \cliente{Julia Yebra}
 \empresaCliente{Arcelormittal Acindar}
  
-\fechaINICIO{30 de abril de 2024}		%Fecha de inicio de la cursada de GdP \fechaInicioName
+\fechaINICIO{23 de abril de 2024}		%Fecha de inicio de la cursada de GdP \fechaInicioName
 \fechaFINALPlan{18 de junio de 2024} 	%Fecha de final de cursada de GdP
-\fechaFINALTrabajo{15 de mayo de 2025}	%Fecha de defensa pública del trabajo final
+\fechaFINALTrabajo{06 de noviembre de 2024}	%Fecha de defensa pública del trabajo final
 
 \usepackage{graphicx}
 \usepackage{subcaption}
@@ -62,7 +62,7 @@ Revisión & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Detalles de los cambios 
 0      & Creación del documento                                 &\fechaInicioName \\ \hline
 1      & Se completa hasta el punto 5 inclusive                 & 06 de mayo de 2024 \\ \hline
 2      & Se completa hasta el punto 9 inclusive					& 14 de mayo de 2024 \\ \hline
-%3      & Se completa hasta el punto 12 inclusive                & {día} de {mes} de 202X \\ \hline
+3      & Se completa hasta el punto 12 inclusive                & 21 de mayo de 2024 \\ \hline
 %4      & Se completa el plan	                                 & {día} de {mes} de 202X \\ \hline
 
 % Si hay más correcciones pasada la versión 4 también se deben especificar acá
@@ -83,7 +83,7 @@ Buenos Aires, \fechaInicioName
 
 \vspace{2cm}
 
-Por medio de la presente se acuerda con el \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'' y consistirá en la implementación de un conjunto de métodos que permitirán detectar cambios significativos en las transmisiones de video de cámaras IP. El trabajo tendrá un presupuesto preliminar estimado de 665 horas y un costo estimado de \textcolor{red}{\$ XXX}, con fecha de inicio el \fechaInicioName\hspace{1px} y fecha de presentación pública el \fechaFinalName.
+Por medio de la presente se acuerda con el \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'' y consistirá en la implementación de un conjunto de métodos que permitirán detectar cambios significativos en las transmisiones de video de cámaras IP. El trabajo tendrá un presupuesto preliminar estimado de 665 horas y un costo estimado de \$33.275.500, con fecha de inicio el \fechaInicioName\hspace{1px} y fecha de presentación pública el \fechaFinalName.
 
 Se adjunta a esta acta la planificación inicial.
 
@@ -251,12 +251,12 @@ Para el desarrollo del presente proyecto se supone que:
 Para comenzar, se identifican los roles de las personas involucradas con un mayor detalle:
 
 \begin{itemize}
-	\item Gerente área innovación \& desarrollo: Responsable de la supervisión y dirección estratégica de proyectos de innovación tecnológica en la empresa.
-	\item Ingeniero de mantenimiento: Encargado de garantizar el funcionamiento óptimo de las cámaras de vigilancia y de implementar medidas preventivas y correctivas.
-	\item Técnico de mantenimiento: Apoya al ingeniero de mantenimiento en la ejecución de tareas diarias de inspección y mantenimiento de las cámaras.
-	\item Gerente de seguridad: Encargado de supervisar y asegurar la integridad y confidencialidad de los sistemas de seguridad y vigilancia.
-	\item Técnico operador de Prosegur: Personal encargado de la operación y monitoreo diario de las cámaras de seguridad.
-	\item Analista de Datos: Profesional encargado de analizar los datos generados por el sistema y diseñar visualizaciones efectivas para comunicar la información de manera clara y comprensible.
+	\item Gerente área innovación \& desarrollo: responsable de la supervisión y dirección estratégica de proyectos de innovación tecnológica en la empresa.
+	\item Ingeniero de mantenimiento: encargado de garantizar el funcionamiento óptimo de las cámaras de vigilancia y de implementar medidas preventivas y correctivas.
+	\item Técnico de mantenimiento: apoya al ingeniero de mantenimiento en la ejecución de tareas diarias de inspección y mantenimiento de las cámaras.
+	\item Gerente de seguridad: encargado de supervisar y asegurar la integridad y confidencialidad de los sistemas de seguridad y vigilancia.
+	\item Técnico operador de Prosegur: personal encargado de la operación y monitoreo diario de las cámaras de seguridad.
+	\item Analista de Datos: profesional encargado de analizar los datos generados por el sistema y diseñar visualizaciones efectivas para comunicar la información de manera clara y comprensible.
 \end{itemize}
 
 A continuación, se presentan las historias de usuario, ponderadas según los siguientes criterios: tiempo requerido, complejidad e incertidumbre. A cada uno se le asigna un puntaje, de acuerdo a la secuencia de Fibonacci, en el rango de 1 (bajo) a 5 (alto). Los \textit{story points} se calculan como el inmediato superior a la suma de los aspectos individuales dentro de la serie.
@@ -320,17 +320,17 @@ Los entregables del proyecto son:
 	\end{enumerate}
 \item Investigación preliminar (110 h)
 	\begin{enumerate}
+	\item Evaluar los requisitos de seguridad. (20 h)
 	\item Explorar proyectos relacionados y mejores prácticas. (20 h)
 	\item Investigar modelos pre-entrenados. (20 h)
 	\item Investigar algoritmos de visión artificial. (30 h) 
 	\item Estudiar las herramientas y tecnologías para la implementación. (20 h)
-	\item Evaluar los requisitos de seguridad. (20 h)
 	\end{enumerate}
 \item Diseño y desarrollo (285 h)
 	\begin{enumerate}
 	\item Diseñar la arquitectura del sistema. (20 h)
 	\item Crear la estructura de la base de datos e implementarla. (10 h)
-	\item Desarrollar la estimación del angulo de rotación. (40 h)
+	\item Desarrollar la estimación del ángulo de rotación. (40 h)
 	\item Desarrollar la detección de la suciedad en el lente óptico. (40 h)
 	\item Desarrollar la detección de obstrucciones total o parciales. (40 h)
 	\item Diseñar el sistema de alarmas. (25 h)
@@ -357,5 +357,136 @@ Los entregables del proyecto son:
 \end{enumerate}
 
 Cantidad total de horas: 665 h.
+
+\section{10. Diagrama de Activity On Node}
+\label{sec:AoN}
+
+En la figura \ref{fig:AoN} se presenta el diagrama de \textit{Activity On Node} (AoN), construido de acuerdo con las siguientes referencias:
+
+\begin{itemize}
+\item Cada nodo representa una tarea del WBS, detallado en la sección \ref{sec:wbs}, e incluye su duración en horas.
+\item El camino crítico está destacado con flechas más gruesas.
+\item Los diferentes colores corresponden a los grupos de tareas del WBS.
+\end{itemize}
+
+Es importante aclarar que, aunque el camino crítico tiene una duración de 445 horas, esto se basa en la premisa de que algunas tareas se pueden realizar en paralelo. Sin embargo, en este proyecto, dado que se cuenta con un único recurso, las tareas se llevarán a cabo de manera secuencial.
+
+\begin{figure}[htpb]
+\centering 
+\includegraphics[width=.75\textwidth]{./Figuras/AONdrawio.png}
+\caption{Diagrama de \textit{Activity on Node}.}
+\label{fig:AoN}
+\end{figure}
+
+
+\section{11. Diagrama de Gantt}
+\label{sec:gantt}
+
+
+En la figura \ref{fig:diagGantt}, se presenta la planificación del proyecto mediante un diagrama de Gantt, teniendo en cuenta una carga de trabajo de 25 horas semanales. Para facilitar la comprensión y visualización de las fechas de inicio y finalización de cada tarea, se adjunta la tabla \ref{tab:diagGantt}.
+
+
+\begin{table}[ht]
+%\caption{Identificación de los interesados}
+%\label{tab:interesados}
+\begin{tabularx}{\linewidth}{|X|r|r|r|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+Nombre & Inicio & Fin & Trabajo \\ \hline
+1.1 Reuniones con el personal involucrado en el proyecto & 23/4/24 & 24/4/24 & 2d \\ \hline
+1.2 Análisis de alcance y requerimientos & 25/4/24 & 26/4/24 & 2d \\ \hline
+1.3 Realizar el plan del proyecto & 29/4/24 & 6/5/24 & 6d \\ \hline
+2.1 Evaluar los requisitos de seguridad & 7/5/24 & 10/5/24 & 4d \\ \hline
+2.2 Explorar proyectos relacionados y mejores prácticas & 13/5/24 & 16/5/24 & 4d \\ \hline
+2.3 Investigar modelos preentrenados & 17/5/24 & 28/5/24 & 8d \\ \hline
+2.4 Investigar algoritmos de visión artificial & 17/5/24 & 30/5/24 & 10d \\ \hline
+2.5 Estudiar las herramientas y tecnologías para la implementación & 31/5/24 & 5/6/24 & 4d \\ \hline
+3.1 Diseñar la arquitectura del sistema & 6/6/24 & 11/6/24 & 4d \\ \hline
+3.2 Crear la estructura de la base de datos e implementarla & 12/6/24 & 21/6/24 & 8d \\ \hline
+3.3 Desarrollar la estimación del ángulo de rotación & 24/6/24 & 3/7/24 & 8d \\ \hline
+3.4 Desarrollar la detección de la suciedad en el lente óptico & 4/7/24 & 15/7/24 & 8d \\ \hline
+3.5 Desarrollar la detección de obstrucciones total o parciales & 16/7/24 & 25/7/24 & 8d \\ \hline
+3.6 Diseñar el sistema de alarmas & 26/7/24 & 1/8/24 & 5d \\ \hline
+3.7 Pruebas de integración y validación & 2/8/24 & 13/8/24 & 8d \\ \hline
+3.8 Dockerizar la solución desarrollada & 14/8/24 & 23/8/24 & 8d \\ \hline
+3.9 Optimización y búsqueda de errores & 26/8/24 & 2/9/24 & 6d \\ \hline
+4.1 Preparar el servidor a utilizar y los servicios necesarios & 3/9/24 & 12/9/24 & 8d \\ \hline
+4.2 Crear los pipeline y configuraciones necesarias para el despliegue & 13/9/24 & 20/9/24 & 6d \\ \hline
+4.3 Implementar la solución & 23/9/24 & 30/9/24 & 6d \\ \hline
+4.4 Preparación de materiales de capacitación & 1/10/24 & 1/10/24 & 1d \\ \hline
+4.5 Organizar y Realizar sesiones de capacitación & 2/10/24 & 3/10/24 & 2d \\ \hline
+5.1 Redacción de la documentación sobre los datos almacenados y la estructura de la base de datos & 4/10/24 & 4/10/24 & 1d \\ \hline
+5.2 Elaboración de diagramas sobre el funcionamiento del sistema & 7/10/24 & 7/10/24 & 1d \\ \hline
+5.3 Confección de informe de avance & 8/10/24 & 10/10/24 & 3d \\ \hline
+5.4 Redacción de memoria del trabajo & 11/10/24 & 31/10/24 & 15d \\ \hline
+5.5 Elaboración de la presentación final & 1/11/24 & 6/11/24 & 4d \\ \hline
+\end{tabularx}
+\caption{Tabla de tareas para confeccionar el diagrama de Gantt.}
+\label{tab:diagGantt}
+\end{table}
+
+\begin{landscape}
+\begin{figure}[htpb]
+\centering 
+\includegraphics[height=0.97\textheight]{./Figuras/Diagrama_gant.png}
+\caption{Diagrama de Gantt.}
+\label{fig:diagGantt}
+\end{figure}
+
+\end{landscape}
+
+\section{12. Presupuesto detallado del proyecto}
+\label{sec:presupuesto}
+
+\begin{table}[htpb]
+\centering
+\begin{tabularx}{\linewidth}{@{}|X|c|r|r|@{}}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{4}{|c|}{\cellcolor[HTML]{C0C0C0}COSTOS DIRECTOS} \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+
+Descripción &
+  \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Cantidad} &
+  \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Valor unitario} &
+  \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Valor total} \\ \hline
+  
+ Horas desarrollador &
+  \multicolumn{1}{c|}{665 h} &
+  \multicolumn{1}{c|}{\$8.500 / h} &
+  \multicolumn{1}{c|}{\$5.652.500} \\ \hline
+  
+ Servidor &
+  \multicolumn{1}{c|}{1} &
+  \multicolumn{1}{c|}{\$25.000.000} &
+  \multicolumn{1}{c|}{\$25.000.000} \\ \hline
+   
+\multicolumn{3}{|c|}{SUBTOTAL} &
+  \multicolumn{1}{c|}{\$30.652.500} \\ \hline
+  
+  
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{4}{|c|}{\cellcolor[HTML]{C0C0C0}COSTOS INDIRECTOS} \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+Descripción &
+  \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Cantidad} &
+  \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Valor unitario} &
+  \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Valor total} \\ \hline
+  
+\multicolumn{1}{|l|}{Soporte y Mantenimiento del Servidor} &
+ 1 año  &
+ \$2.500.000 / año &
+ \$2.500.000 \\ \hline
+\multicolumn{1}{|l|}{ Horas de capacitación del personal} &
+ 25 h  &
+ \$6.000 / h &
+ \$150.000  \\ \hline
+\multicolumn{3}{|c|}{SUBTOTAL} &
+  \multicolumn{1}{c|}{\$2.650.000} \\ \hline
+\rowcolor[HTML]{C0C0C0}
+\multicolumn{3}{|c|}{TOTAL} &
+ \$33.275.500  \\ \hline
+\end{tabularx}%
+\end{table}
 
 \end{document}
